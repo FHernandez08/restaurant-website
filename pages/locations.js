@@ -1,0 +1,5 @@
+function locations() {
+
+}
+
+export { locations };
