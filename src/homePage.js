@@ -1,4 +1,5 @@
 function homePage() {
+    const content = document.getElementById('content');
     const container = document.createElement('div');
     container.classList.add('container');
 
@@ -17,7 +18,7 @@ function homePage() {
 
     container.appendChild(section);
 
-    document.body.appendChild(container);
+    content.appendChild(container);
 }
 
 export { homePage };

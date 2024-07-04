@@ -1,4 +1,5 @@
 function about() {
+    const content = document.getElementById('content');
     const pageContainer = document.createElement('div');
     pageContainer.classList.add('about-container');
 
@@ -53,6 +54,6 @@ function about() {
 
     pageContainer.appendChild(sectionOne);
 
-    document.body.appendChild(pageContainer);
+    content.appendChild(pageContainer);
 }
 export { about };
