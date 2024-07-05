@@ -12,3 +12,7 @@ const aboutBtn = document.querySelector(".about");
 const menuBtn = document.querySelector(".menu");
 const locationsBtn = document.querySelector(".locations");
 
+homeBtn.addEventListener('click', {
+    
+})
+
