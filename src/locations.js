@@ -1,5 +1,5 @@
 function locations() {
-
+    
 }
 
 export { locations };
