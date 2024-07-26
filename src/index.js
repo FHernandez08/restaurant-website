@@ -1,0 +1,1 @@
+// where we will output the pages and have each functionality for each tab

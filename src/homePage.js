@@ -1,5 +1,1 @@
-function homePage() {
-    
-}
-
-export { homePage };
+// page tab for the homepage

@@ -1,5 +1,1 @@
-function locations() {
-    
-}
-
-export { locations };
+// page tab for the locations of the restaurants

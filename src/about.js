@@ -1,4 +1,1 @@
-function about() {
-    
-}
-export { about };
+// page tab for the about section of the restaurant
