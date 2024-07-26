@@ -1,5 +1,0 @@
-function menu() {
-    
-}
-
-export { menu };
