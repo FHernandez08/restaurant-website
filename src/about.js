@@ -1,4 +1,8 @@
 // page tab for the about section of the restaurant
+import latinFood from './assets/latin-food-about.jpg';
+import dogAbout from './assets/dog-about.jpg';
+import coffeeAbout from './assets/coffee-about.jpg';
+
 export default function about() {
     const container = document.createElement('div');
     container.classList.add('container');
@@ -22,7 +26,7 @@ export default function about() {
     foodRow.classList.add('food-row');
 
     const foodImage = new Image();
-    foodImage.src = './assets/latin-food-about.jpg';
+    foodImage.src = latinFood;
     foodImage.style.width = '100px';
     foodImage.style.height = '100px';
     
@@ -38,7 +42,7 @@ export default function about() {
     dogsRow.classList.add('dog-row');
 
     const dogImage = new Image();
-    dogImage.src = './assets/dog-about.jpg';
+    dogImage.src = dogAbout;
     dogImage.style.width = '100px';
     dogImage.style.height = '100px';
 
@@ -54,7 +58,7 @@ export default function about() {
     coffeeRow.classList.add('coffee-row');
 
     const coffeeImage = new Image();
-    coffeeImage.src = './assets/coffee-about.jpg';
+    coffeeImage.src = coffeeAbout;
     coffeeImage.style.width = '100px';
     coffeeImage.style.height = '100px';
 
