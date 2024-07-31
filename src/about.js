@@ -1,13 +1,10 @@
 // page tab for the about section of the restaurant
-import latinFood from './assets/latin-food-about.jpg';
-import dogAbout from './assets/dog-about.jpg';
-import coffeeAbout from './assets/coffee-about.jpg';
 
 function about() {
     const content = document.querySelector('#content');
 
     const container = document.createElement('div');
-    container.classList.add('container');
+    container.classList.add('about-container');
 
     const aboutHeader = document.createElement('h2');
     aboutHeader.classList.add('about-header');
@@ -27,48 +24,48 @@ function about() {
     const foodRow = document.createElement('div');
     foodRow.classList.add('food-row');
 
-    const foodImage = new Image();
-    foodImage.src = latinFood;
-    foodImage.style.width = '100px';
-    foodImage.style.height = '100px';
+    const latinFood = new Image();
+    latinFood.src = './assets/latin-food-about.jpg';
+    latinFood.style.width = '150px';
+    latinFood.style.height = '150px';
     
     const foodText = document.createElement('p');
     foodText.classList.add('food-text');
     foodText.textContent = "We decided to add Latin cuisine like bunuelos and pupusas to our menu because we want to show our hispanic heritage. Our coffee shops have been run by latin people, and we believe that showing our latin culture would be best done by food.";
 
-    foodRow.appendChild(foodImage);
+    foodRow.appendChild(latinFood);
     foodRow.appendChild(foodText);
     mainSection.appendChild(foodRow);
 
     const dogsRow = document.createElement('div');
     dogsRow.classList.add('dog-row');
 
-    const dogImage = new Image();
-    dogImage.src = dogAbout;
-    dogImage.style.width = '100px';
-    dogImage.style.height = '100px';
+    const dogAbout = new Image();
+    dogAbout.src = './assets/dog-about.jpg';
+    dogAbout.style.width = '150px';
+    dogAbout.style.height = '150px';
 
     const dogText = document.createElement('p');
     dogText.classList.add('dog-text');
     dogText.textContent = "Along with adding Latin Cuisine, we believed that dogs are our best friends. What's better than to bring them to your neighborhood coffee shop. We welcome all pets and encourage everyone to enjoy their experience with their best friends!";
 
-    dogsRow.appendChild(dogImage);
+    dogsRow.appendChild(dogAbout);
     dogsRow.appendChild(dogText);
     mainSection.appendChild(dogsRow);
 
     const coffeeRow = document.createElement('div');
     coffeeRow.classList.add('coffee-row');
 
-    const coffeeImage = new Image();
-    coffeeImage.src = coffeeAbout;
-    coffeeImage.style.width = '100px';
-    coffeeImage.style.height = '100px';
+    const coffeeAbout = new Image();
+    coffeeAbout.src = './assets/coffee-about.jpg';
+    coffeeAbout.style.width = '150px';
+    coffeeAbout.style.height = '150px';
 
     const coffeeText = document.createElement('div');
     coffeeText.classList.add('coffee-text');
     coffeeText.textContent = "Obviously, the most important thing about our shop! Coffee!!! We know that coffee can be had at any time, and here at this coffee shop, we want to provide the best coffee around town."
 
-    coffeeRow.appendChild(coffeeImage);
+    coffeeRow.appendChild(coffeeAbout);
     coffeeRow.appendChild(coffeeText);
     mainSection.appendChild(coffeeRow);
 
