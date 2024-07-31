@@ -1,5 +1,7 @@
 // page tab for the homepage
-export default function homePage() {
+function homePage() {
+    const content = document.querySelector('#content');
+
     const container = document.createElement('div');
     container.classList.add('container');
 
@@ -13,4 +15,8 @@ export default function homePage() {
 
     container.appendChild(homepageHeader);
     container.appendChild(headerSubtext);
-}
+
+    content.appendChild(container);
+};
+
+export { homePage };

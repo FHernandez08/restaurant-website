@@ -1,15 +1,26 @@
 // where we will output the pages and have each functionality for each tab
 
 // importing tabs for the content
-import homePage from "./homePage";
-import about from "./about";
-import menu from "./menu";
-import locations from "./locations";
+import { homePage } from './homePage';
+import { about } from './about';
+import { menu } from './menu';
 
-// selecting elements from html
-const homeBtn = document.querySelector('.home');
-const aboutBtn = document.querySelector('.about');
-const menuBtn = document.querySelector('.menu');
-const locationsBtn = document.querySelector('.locations');
+// importing style
+import './style.css';
 
-// function
+document.addEventListener('DOMContentLoaded', () => {
+  // selecting elements from html
+  const homeBtn = document.querySelector(".home");
+  const aboutBtn = document.querySelector(".about");
+  const menuBtn = document.querySelector(".menu");
+
+  const content = document.querySelector("#content");
+
+  homeBtn.addEventListener("click", homePage);
+
+  aboutBtn.addEventListener("click", about);
+
+  menuBtn.addEventListener("click", menu);
+
+  homePage();
+});

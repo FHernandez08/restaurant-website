@@ -3,7 +3,9 @@ import latinFood from './assets/latin-food-about.jpg';
 import dogAbout from './assets/dog-about.jpg';
 import coffeeAbout from './assets/coffee-about.jpg';
 
-export default function about() {
+function about() {
+    const content = document.querySelector('#content');
+
     const container = document.createElement('div');
     container.classList.add('container');
 
@@ -71,4 +73,8 @@ export default function about() {
     mainSection.appendChild(coffeeRow);
 
     container.appendChild(mainSection);
-}
+
+    content.appendChild(container);
+};
+
+export { about };
